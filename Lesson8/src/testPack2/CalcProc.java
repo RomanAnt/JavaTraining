@@ -69,6 +69,7 @@ public class CalcProc implements ActionListener
 			 }
 			break;
 		case "C":calcReferer.writeDisplay("0");
+		argumentUno = argumentDos = theResault = 0.0;
 				break;
 		case "+": {
 					actionBttnHasBeenClicked = true;
@@ -83,7 +84,9 @@ public class CalcProc implements ActionListener
 			switch(whatWeDo)
 			{	
 				case "+":
-				calcReferer.writeDisplay(String.valueOf( argumentUno+argumentDos));
+				argumentDos = Double.valueOf(calcReferer.readDisplay());
+				theResault = argumentUno+argumentDos;	
+				calcReferer.writeDisplay(String.valueOf(theResault));
 				break;
 			}
 		}

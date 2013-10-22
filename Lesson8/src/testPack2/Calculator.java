@@ -284,14 +284,11 @@ public class Calculator
 		buttnZer.addActionListener(calcEngine);
 		buttnDelim.addActionListener(calcEngine);
 		buttnC.addActionListener(calcEngine);
-
-		
 		
 		
 	}
 
-	
-	
+		
 	public void writeDisplay(String stringDisp)  //method that sets the display value during calculation
 	{
 		txtFld.setText(stringDisp);
@@ -302,7 +299,7 @@ public class Calculator
 		return txtFld.getText();
 	}
 	
-	
+								
 	
 	public static void main(String аргумзыВсякие[])
 	{
