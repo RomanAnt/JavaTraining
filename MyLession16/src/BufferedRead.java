@@ -15,7 +15,6 @@ public class BufferedRead {
 	    myFile = new FileInputStream("adcWrite.data");
 	    buff = new BufferedInputStream(myFile);
 	    
-	    
 	    boolean eoFile = false;
 	    while (!eoFile)
 	    {
