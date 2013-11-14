@@ -1,6 +1,9 @@
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 
 public class BufferedRead {
@@ -43,6 +46,23 @@ public class BufferedRead {
 		}
 	    }
 	}
+	StringBuffer stBuff = new StringBuffer();
+	try 
+	{
+	    FileInputStream myStrFile = new FileInputStream("abc.txt");
+	    InputStreamReader inpStrReadr = new InputStreamReader (myStrFile, "UTF8");
+	    Reader reader = new BufferedReader(inpStrReadr);
+	    
+	    int ch;
+	    while ((ch = reader.read())>-1)
+	    {
+		stBuff.append((char)ch);
+	    }
+	    
+	    stBuff.toString();
+	}
+	catch (IOException e)
+	{System.out.println("Error");}
     }
 
 }
