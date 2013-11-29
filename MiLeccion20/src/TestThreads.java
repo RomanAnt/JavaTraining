@@ -1,5 +1,6 @@
 
-public class TestThreads {
+public class TestThreads 
+{
 
     public static void main(String[] args) 
     {
