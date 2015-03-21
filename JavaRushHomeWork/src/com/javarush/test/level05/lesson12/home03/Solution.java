@@ -12,6 +12,10 @@ public class Solution
     public static void main(String[] args)
     {
         Mouse jerryMouse = new Mouse("Jerry", 12 , 5);
+        Dog guffyDog = new Dog("guffy", 25 , 8);
+        Cat tomCat = new Cat("Tom", 20 , 20);
+
+        //System.out.println(jerryMouse.name);
 
         //Напишите тут ваш код
     }
@@ -28,6 +32,35 @@ public class Solution
             this.height = height;
             this.tail = tail;
         }
+
+    }
+    public static class Cat
+    {
+        String name;
+        int height;
+        int tail;
+
+        public Cat(String name, int height, int tail)
+        {
+            this.name = name;
+            this.height = height;
+            this.tail = tail;
+        }
+
+    }
+    public static class Dog
+    {
+        String name;
+        int height;
+        int tail;
+
+        public Dog(String name, int height, int tail)
+        {
+            this.name = name;
+            this.height = height;
+            this.tail = tail;
+        }
+
     }
 
 
