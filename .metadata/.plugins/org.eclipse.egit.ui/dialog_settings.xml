@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<list key="CommitDialog.authorValues">
+		<item value="Administrator &lt;Administrator@10.186.240.51&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Administrator &lt;Administrator@10.186.240.51&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
+		<item value="758" key="DIALOG_WIDTH"/>
+		<item value="87" key="DIALOG_Y_ORIGIN"/>
+		<item value="811" key="DIALOG_HEIGHT"/>
+		<item value="387" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Tahoma|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item value="620" key="DIALOG_WIDTH"/>
+		<item value="209" key="DIALOG_Y_ORIGIN"/>
+		<item value="458" key="DIALOG_HEIGHT"/>
+		<item value="394" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Tahoma|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="658" key="DIALOG_WIDTH"/>
+		<item value="209" key="DIALOG_Y_ORIGIN"/>
+		<item value="375" key="DIALOG_X_ORIGIN"/>
+		<item value="458" key="DIALOG_HEIGHT"/>
+		<item value="1|Tahoma|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

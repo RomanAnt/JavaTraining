@@ -33,10 +33,12 @@ public class CalcProc implements ActionListener
        
        if (actionBttnHasBeenClicked)
        {
-    	   calcReferer.writeDisplay(null);
+    	   calcReferer.writeDisplay("");
     	   actionBttnHasBeenClicked = false;
+    	   //calcReferer.writeDisplay(null);
        }
-       
+       		
+       		
 		switch (currentBttn)
 		{
 		case "1":calcReferer.writeDisplay(calcReferer.readDisplay()+"1");
@@ -71,24 +73,29 @@ public class CalcProc implements ActionListener
 		case "C":calcReferer.writeDisplay("0");
 		argumentUno = argumentDos = theResault = 0.0;
 				break;
-		case "+": {
-					actionBttnHasBeenClicked = true;
-					argumentUno = Double.valueOf(calcReferer.readDisplay());
-					whatWeDo = "+";
-					theResault = argumentUno + argumentDos;
-					calcReferer.writeDisplay(String.valueOf(theResault));
+		case "+": 
+		{
+		    numberOfDelimiters = 0;
+        	    actionBttnHasBeenClicked = true;
+        	    argumentUno = Double.valueOf(calcReferer.readDisplay());
+        	    whatWeDo = "+";
+        	    theResault = argumentUno + argumentDos;
+        	    calcReferer.writeDisplay(String.valueOf(theResault));
 					
-	              }	break;
+	         }	break;
 		case "=":
 		{
-			switch(whatWeDo)
-			{	
-				case "+":
-				argumentDos = Double.valueOf(calcReferer.readDisplay());
-				theResault = argumentUno+argumentDos;	
-				calcReferer.writeDisplay(String.valueOf(theResault));
-				break;
-			}
+		    numberOfDelimiters = 0;
+		    actionBttnHasBeenClicked = true;
+        	    switch (whatWeDo) 
+        	    {
+        	    case "+":
+        		argumentDos = Double.valueOf(calcReferer.readDisplay());
+        		theResault = argumentUno + argumentDos;
+        		calcReferer.writeDisplay(String.valueOf(theResault));
+        		break;
+        	    }
+			
 		}
 	     
 	              
@@ -112,19 +119,23 @@ public class CalcProc implements ActionListener
 		
     if (chArr.length >1)  //if the button label has HTML code find the corn
     {    	   
- 	   for (char chA : chArr)		//counts number of > brackets
- 		   if (chA =='>') brCount++;
- 	       	   
- 	   for (int i=0; i<chArr.length; i++)	//look over the array to find the middle > bracket
- 	   {
- 		   if (chArr[i] == '>') brCount= (brCount/2)-1;
- 		   if (brCount < 0) 
- 			   {
-	 			   theText = chArr[++i];         //take the next after the bracket symbol
-	 			   break;
- 			   }
- 	   }
- 		   
+	    for (char chA : chArr)
+		// counts number of > brackets
+		if (chA == '>')
+		    brCount++;
+
+	    for (int i = 0; i < chArr.length; i++) // look over the array to
+						   // find the middle > bracket
+	    {
+		if (chArr[i] == '>')
+		    brCount = (brCount / 2) - 1;
+		if (brCount < 0) {
+		    theText = chArr[++i]; // take the next after the bracket
+					  // symbol
+		    break;
+		}
+	    }
+
     }
     else theText = chArr[0];
     

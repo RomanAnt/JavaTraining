@@ -7,7 +7,10 @@ public class TestPayIncrease
 	
 	public static void main(String[] args) 
 	{
-
+		Person indigoNamed = new Person("MrIndigo");
+		System.out.println(indigoNamed.getName());
+		
+		
         Person workers[] = new Person[3];
 		workers[0] = new Employee("John");
 		workers[1] = new Contractor("Marie");
