@@ -17,22 +17,28 @@ public class Solution
         System.out.println(duck1);
         System.out.println(duck2);
 
+        System.out.println("-------------");
+
         Cat cat1 = new Cat();
         Cat cat2 = new Cat();
         System.out.println(cat1);
         System.out.println(cat2);
+
+        System.out.println("-------------");
 
         Dog dogA = new Dog();
         Dog dogB = new Dog();
         System.out.println(dogA);
         System.out.println(dogB);
 
+        System.out.println("-------------");
         //Напишите тут ваш код
     }
 
     public static class Duck
     {
-        public String toString() {
+        public String toString()
+        {
             return "Duck";
         }
     }
