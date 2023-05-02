@@ -1,0 +1,5 @@
+package PoolPuzzles;
+
+public class Puzzle4b extends PoolPuzzleP121 {
+
+}

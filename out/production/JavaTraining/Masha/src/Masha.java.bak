@@ -1,0 +1,18 @@
+package Masha.src;
+public class Masha
+{
+	public static void main(String[] args)
+	{
+		String grlf = "Masha";
+		String grf = "Masha";
+		//if (grlf == grf) grf = "Equal";
+		System.out.println(grlf == grf);
+
+		String grf1 = new String("Nata");
+		String grf2 = new String("Nata");
+
+		System.out.println(grf1==grf2);
+
+	}
+
+}

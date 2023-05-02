@@ -29,10 +29,10 @@ class Portfolio4 extends Thread
 	    {
 		System.out.println("\ninside the try");
 	    }
-	    /*catch (InterruptedException e)
+	    catch (InterruptedException e)
 	    {
 		System.out.println(Thread.currentThread().getName() + e.toString());
-	    }*/
+	    }
 	}
     }
 }
